@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     stages {
+
         stage('Build') {
             steps {
                 bat 'python -m venv venv'
@@ -14,7 +15,6 @@ pipeline {
                 bat 'venv\\Scripts\\activate && flake8 cart.py orders.py || exit /b 0'
             }
         }
-
 
         stage('Test') {
             steps {
@@ -39,4 +39,4 @@ pipeline {
             echo 'FAILURE: one stage failed. Open the red stage to see why.'
         }
     }
-}
+}//b
