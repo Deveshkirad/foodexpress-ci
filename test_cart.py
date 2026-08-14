@@ -1,6 +1,7 @@
 from cart import cart_total, apply_discount
 def test_cart_total():
 
+
     items = [{"price": 100, "qty": 2}, {"price": 50, "qty": 1}]
     assert cart_total(items) == 250
 
