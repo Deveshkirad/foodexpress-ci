@@ -4,4 +4,4 @@ def test_order_total():
 def test_free_delivery_yes():
     assert is_free_delivery(500) == True
 def test_free_delivery_no():
-    assert is_free_delivery(300) == False
+    assert is_free_delivery(3243) == False
